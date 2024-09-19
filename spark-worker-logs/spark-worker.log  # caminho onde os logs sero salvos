@@ -1,0 +1,1721 @@
+24/09/19 06:22:14 INFO Worker: Started daemon with process name: 1@57333b204df7
+24/09/19 06:22:14 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:22:14 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:22:14 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:22:15 INFO SecurityManager: Changing view acls to: spark
+24/09/19 06:22:15 INFO SecurityManager: Changing modify acls to: spark
+24/09/19 06:22:15 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:22:15 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:22:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+24/09/19 06:22:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:22:15 INFO Utils: Successfully started service 'sparkWorker' on port 33987.
+24/09/19 06:22:15 INFO Worker: Worker decommissioning not enabled.
+24/09/19 06:22:15 INFO Worker: Starting Spark worker 172.23.0.5:33987 with 2 cores, 1024.0 MiB RAM
+24/09/19 06:22:15 INFO Worker: Running Spark version 3.5.2
+24/09/19 06:22:15 INFO Worker: Spark home: /opt/bitnami/spark
+24/09/19 06:22:15 INFO ResourceUtils: ==============================================================
+24/09/19 06:22:15 INFO ResourceUtils: No custom resources configured for spark.worker.
+24/09/19 06:22:15 INFO ResourceUtils: ==============================================================
+24/09/19 06:22:16 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+24/09/19 06:22:16 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+24/09/19 06:22:16 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://57333b204df7:8081
+24/09/19 06:22:16 INFO Worker: Connecting to master spark-master:7077...
+24/09/19 06:22:16 INFO TransportClientFactory: Successfully created connection to spark-master/172.23.0.3:7077 after 29 ms (0 ms spent in bootstraps)
+24/09/19 06:22:16 INFO Worker: Successfully registered with master spark://172.23.0.3:7077
+24/09/19 06:22:55 INFO Worker: Asked to launch executor app-20240919062255-0000/0 for SimpleDataFrame
+24/09/19 06:22:56 INFO SecurityManager: Changing view acls to: spark
+24/09/19 06:22:56 INFO SecurityManager: Changing modify acls to: spark
+24/09/19 06:22:56 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:22:56 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:22:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+24/09/19 06:22:56 INFO ExecutorRunner: Launch command: "/opt/bitnami/java/bin/java" "-cp" "/opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=33543" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@dd9f7aa6690e:33543" "--executor-id" "0" "--hostname" "172.23.0.5" "--cores" "2" "--app-id" "app-20240919062255-0000" "--worker-url" "spark://Worker@172.23.0.5:33987" "--resourceProfileId" "0"
+24/09/19 06:22:57 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 125@57333b204df7
+24/09/19 06:22:57 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:22:57 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:22:57 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:22:58 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:22:58 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 06:22:58 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 06:22:58 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:22:58 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:22:58 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 06:22:58 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33543 after 73 ms (0 ms spent in bootstraps)
+24/09/19 06:22:58 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 06:22:58 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 06:22:58 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:22:58 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:22:58 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 06:22:59 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33543 after 2 ms (0 ms spent in bootstraps)
+24/09/19 06:22:59 INFO DiskBlockManager: Created local directory at /tmp/spark-57980072-ccb8-428d-a8ce-65d151c6b9cf/executor-907ca3f1-53ca-4933-864c-983031dd5c4f/blockmgr-1cfa5b43-eef0-44ff-a7bb-dbb19d2bb01a
+24/09/19 06:22:59 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/09/19 06:22:59 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@dd9f7aa6690e:33543
+24/09/19 06:22:59 INFO WorkerWatcher: Connecting to worker spark://Worker@172.23.0.5:33987
+24/09/19 06:22:59 INFO TransportClientFactory: Successfully created connection to /172.23.0.5:33987 after 2 ms (0 ms spent in bootstraps)
+24/09/19 06:22:59 INFO WorkerWatcher: Successfully connected to spark://Worker@172.23.0.5:33987
+24/09/19 06:22:59 INFO ResourceUtils: ==============================================================
+24/09/19 06:22:59 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/09/19 06:22:59 INFO ResourceUtils: ==============================================================
+24/09/19 06:22:59 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/09/19 06:22:59 INFO Executor: Starting executor ID 0 on host 172.23.0.5
+24/09/19 06:22:59 INFO Executor: OS info Linux, 5.15.146.1-microsoft-standard-WSL2, amd64
+24/09/19 06:22:59 INFO Executor: Java version 17.0.12
+24/09/19 06:22:59 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44915.
+24/09/19 06:22:59 INFO NettyBlockTransferService: Server created on 172.23.0.5:44915
+24/09/19 06:22:59 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/09/19 06:22:59 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 172.23.0.5, 44915, None)
+24/09/19 06:22:59 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 172.23.0.5, 44915, None)
+24/09/19 06:22:59 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 172.23.0.5, 44915, None)
+24/09/19 06:22:59 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/09/19 06:22:59 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@52cc8023 for default.
+24/09/19 06:23:00 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+24/09/19 06:23:00 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/09/19 06:23:00 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+24/09/19 06:23:00 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:40041 after 2 ms (0 ms spent in bootstraps)
+24/09/19 06:23:00 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+24/09/19 06:23:00 INFO TorrentBroadcast: Reading broadcast variable 0 took 123 ms
+24/09/19 06:23:00 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+24/09/19 06:23:01 INFO CodeGenerator: Code generated in 179.684548 ms
+24/09/19 06:23:01 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:23:01 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+24/09/19 06:23:01 INFO Executor: Running task 0.1 in stage 0.0 (TID 1)
+24/09/19 06:23:01 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 1)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:23:01 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+24/09/19 06:23:01 INFO Executor: Running task 0.2 in stage 0.0 (TID 2)
+24/09/19 06:23:01 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 2)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:23:01 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+24/09/19 06:23:01 INFO Executor: Running task 0.3 in stage 0.0 (TID 3)
+24/09/19 06:23:01 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 3)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:23:02 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+24/09/19 06:23:02 INFO Worker: Asked to kill executor app-20240919062255-0000/0
+24/09/19 06:23:02 INFO ExecutorRunner: Runner thread for executor app-20240919062255-0000/0 interrupted
+24/09/19 06:23:02 INFO ExecutorRunner: Killing process!
+24/09/19 06:23:02 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+24/09/19 06:23:02 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 06:23:02 INFO MemoryStore: MemoryStore cleared
+24/09/19 06:23:02 INFO BlockManager: BlockManager stopped
+24/09/19 06:23:02 INFO Worker: Executor app-20240919062255-0000/0 finished with state KILLED exitStatus 143
+24/09/19 06:23:02 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+24/09/19 06:23:02 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20240919062255-0000, execId=0)
+24/09/19 06:23:02 INFO ExternalShuffleBlockResolver: Application app-20240919062255-0000 removed, cleanupLocalDirs = true
+24/09/19 06:23:02 INFO Worker: Cleaning up local directories for application app-20240919062255-0000
+24/09/19 06:26:53 INFO Worker: Asked to launch executor app-20240919062653-0001/0 for SimpleDataFrame
+24/09/19 06:26:53 INFO SecurityManager: Changing view acls to: spark
+24/09/19 06:26:53 INFO SecurityManager: Changing modify acls to: spark
+24/09/19 06:26:53 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:26:53 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:26:53 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+24/09/19 06:26:53 INFO ExecutorRunner: Launch command: "/opt/bitnami/java/bin/java" "-cp" "/opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=44183" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@dd9f7aa6690e:44183" "--executor-id" "0" "--hostname" "172.23.0.5" "--cores" "2" "--app-id" "app-20240919062653-0001" "--worker-url" "spark://Worker@172.23.0.5:33987" "--resourceProfileId" "0"
+24/09/19 06:26:55 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 249@57333b204df7
+24/09/19 06:26:55 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:26:55 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:26:55 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:26:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:26:55 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 06:26:55 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 06:26:55 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:26:55 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:26:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 06:26:56 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:44183 after 56 ms (0 ms spent in bootstraps)
+24/09/19 06:26:56 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 06:26:56 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 06:26:56 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:26:56 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:26:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 06:26:56 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:44183 after 2 ms (0 ms spent in bootstraps)
+24/09/19 06:26:56 INFO DiskBlockManager: Created local directory at /tmp/spark-57980072-ccb8-428d-a8ce-65d151c6b9cf/executor-aca48833-1da4-4631-a6a7-43533ac42bd7/blockmgr-95f1b347-d966-454b-a211-b5ee9a3693c0
+24/09/19 06:26:56 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/09/19 06:26:56 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@dd9f7aa6690e:44183
+24/09/19 06:26:56 INFO WorkerWatcher: Connecting to worker spark://Worker@172.23.0.5:33987
+24/09/19 06:26:56 INFO TransportClientFactory: Successfully created connection to /172.23.0.5:33987 after 3 ms (0 ms spent in bootstraps)
+24/09/19 06:26:56 INFO WorkerWatcher: Successfully connected to spark://Worker@172.23.0.5:33987
+24/09/19 06:26:56 INFO ResourceUtils: ==============================================================
+24/09/19 06:26:56 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/09/19 06:26:56 INFO ResourceUtils: ==============================================================
+24/09/19 06:26:56 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/09/19 06:26:56 INFO Executor: Starting executor ID 0 on host 172.23.0.5
+24/09/19 06:26:56 INFO Executor: OS info Linux, 5.15.146.1-microsoft-standard-WSL2, amd64
+24/09/19 06:26:56 INFO Executor: Java version 17.0.12
+24/09/19 06:26:56 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41629.
+24/09/19 06:26:56 INFO NettyBlockTransferService: Server created on 172.23.0.5:41629
+24/09/19 06:26:56 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/09/19 06:26:56 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 172.23.0.5, 41629, None)
+24/09/19 06:26:56 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 172.23.0.5, 41629, None)
+24/09/19 06:26:56 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 172.23.0.5, 41629, None)
+24/09/19 06:26:56 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/09/19 06:26:56 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@4c02f038 for default.
+24/09/19 06:26:57 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+24/09/19 06:26:57 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/09/19 06:26:57 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+24/09/19 06:26:57 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:42791 after 1 ms (0 ms spent in bootstraps)
+24/09/19 06:26:57 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+24/09/19 06:26:57 INFO TorrentBroadcast: Reading broadcast variable 0 took 109 ms
+24/09/19 06:26:57 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+24/09/19 06:26:58 INFO CodeGenerator: Code generated in 184.399467 ms
+24/09/19 06:26:58 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:26:58 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+24/09/19 06:26:58 INFO Executor: Running task 0.1 in stage 0.0 (TID 1)
+24/09/19 06:26:58 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 1)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:26:58 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+24/09/19 06:26:58 INFO Executor: Running task 0.2 in stage 0.0 (TID 2)
+24/09/19 06:26:58 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 2)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:26:58 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+24/09/19 06:26:58 INFO Executor: Running task 0.3 in stage 0.0 (TID 3)
+24/09/19 06:26:58 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 3)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:26:59 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+24/09/19 06:26:59 INFO Worker: Asked to kill executor app-20240919062653-0001/0
+24/09/19 06:26:59 INFO ExecutorRunner: Runner thread for executor app-20240919062653-0001/0 interrupted
+24/09/19 06:26:59 INFO ExecutorRunner: Killing process!
+24/09/19 06:26:59 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+24/09/19 06:26:59 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 06:26:59 INFO Worker: Executor app-20240919062653-0001/0 finished with state KILLED exitStatus 143
+24/09/19 06:26:59 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+24/09/19 06:26:59 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20240919062653-0001, execId=0)
+24/09/19 06:26:59 INFO ExternalShuffleBlockResolver: Application app-20240919062653-0001 removed, cleanupLocalDirs = true
+24/09/19 06:26:59 INFO Worker: Cleaning up local directories for application app-20240919062653-0001
+24/09/19 06:30:28 INFO Worker: Asked to launch executor app-20240919063028-0002/0 for SimpleDataFrame
+24/09/19 06:30:28 INFO SecurityManager: Changing view acls to: spark
+24/09/19 06:30:28 INFO SecurityManager: Changing modify acls to: spark
+24/09/19 06:30:28 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:30:28 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:30:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+24/09/19 06:30:28 INFO ExecutorRunner: Launch command: "/opt/bitnami/java/bin/java" "-cp" "/opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=36771" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@dd9f7aa6690e:36771" "--executor-id" "0" "--hostname" "172.23.0.5" "--cores" "2" "--app-id" "app-20240919063028-0002" "--worker-url" "spark://Worker@172.23.0.5:33987" "--resourceProfileId" "0"
+24/09/19 06:30:29 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 362@57333b204df7
+24/09/19 06:30:29 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:30:29 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:30:29 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:30:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:30:29 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 06:30:29 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 06:30:29 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:30:29 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:30:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 06:30:30 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:36771 after 61 ms (0 ms spent in bootstraps)
+24/09/19 06:30:30 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 06:30:30 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 06:30:30 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:30:30 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:30:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 06:30:30 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:36771 after 4 ms (0 ms spent in bootstraps)
+24/09/19 06:30:30 INFO DiskBlockManager: Created local directory at /tmp/spark-57980072-ccb8-428d-a8ce-65d151c6b9cf/executor-58a62a18-8fc5-4c48-92c2-b0385e037f57/blockmgr-6037bac2-ac5a-4ed5-844b-2ca5c12ffc99
+24/09/19 06:30:30 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/09/19 06:30:30 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@dd9f7aa6690e:36771
+24/09/19 06:30:30 INFO WorkerWatcher: Connecting to worker spark://Worker@172.23.0.5:33987
+24/09/19 06:30:30 INFO TransportClientFactory: Successfully created connection to /172.23.0.5:33987 after 3 ms (0 ms spent in bootstraps)
+24/09/19 06:30:30 INFO WorkerWatcher: Successfully connected to spark://Worker@172.23.0.5:33987
+24/09/19 06:30:30 INFO ResourceUtils: ==============================================================
+24/09/19 06:30:30 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/09/19 06:30:30 INFO ResourceUtils: ==============================================================
+24/09/19 06:30:30 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/09/19 06:30:30 INFO Executor: Starting executor ID 0 on host 172.23.0.5
+24/09/19 06:30:30 INFO Executor: OS info Linux, 5.15.146.1-microsoft-standard-WSL2, amd64
+24/09/19 06:30:30 INFO Executor: Java version 17.0.12
+24/09/19 06:30:30 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38783.
+24/09/19 06:30:30 INFO NettyBlockTransferService: Server created on 172.23.0.5:38783
+24/09/19 06:30:30 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/09/19 06:30:30 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 172.23.0.5, 38783, None)
+24/09/19 06:30:30 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 172.23.0.5, 38783, None)
+24/09/19 06:30:30 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 172.23.0.5, 38783, None)
+24/09/19 06:30:30 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/09/19 06:30:30 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5e4e04a3 for default.
+24/09/19 06:30:31 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+24/09/19 06:30:31 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/09/19 06:30:31 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+24/09/19 06:30:31 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33447 after 3 ms (0 ms spent in bootstraps)
+24/09/19 06:30:31 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+24/09/19 06:30:31 INFO TorrentBroadcast: Reading broadcast variable 0 took 115 ms
+24/09/19 06:30:31 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+24/09/19 06:30:32 INFO CodeGenerator: Code generated in 170.892563 ms
+24/09/19 06:30:32 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:30:32 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+24/09/19 06:30:32 INFO Executor: Running task 0.1 in stage 0.0 (TID 1)
+24/09/19 06:30:33 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 1)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:30:33 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+24/09/19 06:30:33 INFO Executor: Running task 0.2 in stage 0.0 (TID 2)
+24/09/19 06:30:33 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 2)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:30:33 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+24/09/19 06:30:33 INFO Executor: Running task 0.3 in stage 0.0 (TID 3)
+24/09/19 06:30:33 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 3)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:30:33 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+24/09/19 06:30:33 INFO Worker: Asked to kill executor app-20240919063028-0002/0
+24/09/19 06:30:33 INFO ExecutorRunner: Runner thread for executor app-20240919063028-0002/0 interrupted
+24/09/19 06:30:33 INFO ExecutorRunner: Killing process!
+24/09/19 06:30:33 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+24/09/19 06:30:33 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 06:30:33 INFO Worker: Executor app-20240919063028-0002/0 finished with state KILLED exitStatus 143
+24/09/19 06:30:33 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+24/09/19 06:30:33 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20240919063028-0002, execId=0)
+24/09/19 06:30:33 INFO ExternalShuffleBlockResolver: Application app-20240919063028-0002 removed, cleanupLocalDirs = true
+24/09/19 06:30:33 INFO Worker: Cleaning up local directories for application app-20240919063028-0002
+24/09/19 06:33:45 INFO Worker: Asked to launch executor app-20240919063345-0003/0 for SimpleDataFrame
+24/09/19 06:33:45 INFO SecurityManager: Changing view acls to: spark
+24/09/19 06:33:45 INFO SecurityManager: Changing modify acls to: spark
+24/09/19 06:33:45 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:33:45 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:33:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+24/09/19 06:33:45 INFO ExecutorRunner: Launch command: "/opt/bitnami/java/bin/java" "-cp" "/opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=33393" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@dd9f7aa6690e:33393" "--executor-id" "0" "--hostname" "172.23.0.5" "--cores" "2" "--app-id" "app-20240919063345-0003" "--worker-url" "spark://Worker@172.23.0.5:33987" "--resourceProfileId" "0"
+24/09/19 06:33:46 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 812@57333b204df7
+24/09/19 06:33:46 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:33:46 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:33:46 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:33:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:33:47 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 06:33:47 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 06:33:47 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:33:47 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:33:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 06:33:47 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33393 after 61 ms (0 ms spent in bootstraps)
+24/09/19 06:33:47 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 06:33:47 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 06:33:47 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:33:47 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:33:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 06:33:47 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33393 after 2 ms (0 ms spent in bootstraps)
+24/09/19 06:33:47 INFO DiskBlockManager: Created local directory at /tmp/spark-57980072-ccb8-428d-a8ce-65d151c6b9cf/executor-0efedffe-a0c3-4edc-ae15-17adb9bde9dc/blockmgr-63b1208b-4ea7-4c9c-86be-c5eaf2105235
+24/09/19 06:33:47 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/09/19 06:33:48 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@dd9f7aa6690e:33393
+24/09/19 06:33:48 INFO WorkerWatcher: Connecting to worker spark://Worker@172.23.0.5:33987
+24/09/19 06:33:48 INFO TransportClientFactory: Successfully created connection to /172.23.0.5:33987 after 3 ms (0 ms spent in bootstraps)
+24/09/19 06:33:48 INFO WorkerWatcher: Successfully connected to spark://Worker@172.23.0.5:33987
+24/09/19 06:33:48 INFO ResourceUtils: ==============================================================
+24/09/19 06:33:48 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/09/19 06:33:48 INFO ResourceUtils: ==============================================================
+24/09/19 06:33:48 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/09/19 06:33:48 INFO Executor: Starting executor ID 0 on host 172.23.0.5
+24/09/19 06:33:48 INFO Executor: OS info Linux, 5.15.146.1-microsoft-standard-WSL2, amd64
+24/09/19 06:33:48 INFO Executor: Java version 17.0.12
+24/09/19 06:33:48 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43275.
+24/09/19 06:33:48 INFO NettyBlockTransferService: Server created on 172.23.0.5:43275
+24/09/19 06:33:48 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/09/19 06:33:48 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 172.23.0.5, 43275, None)
+24/09/19 06:33:48 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 172.23.0.5, 43275, None)
+24/09/19 06:33:48 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 172.23.0.5, 43275, None)
+24/09/19 06:33:48 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/09/19 06:33:48 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@45b9ca12 for default.
+24/09/19 06:33:48 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+24/09/19 06:33:48 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/09/19 06:33:49 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+24/09/19 06:33:49 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:39529 after 1 ms (0 ms spent in bootstraps)
+24/09/19 06:33:49 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+24/09/19 06:33:49 INFO TorrentBroadcast: Reading broadcast variable 0 took 118 ms
+24/09/19 06:33:49 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+24/09/19 06:33:50 INFO CodeGenerator: Code generated in 168.305021 ms
+24/09/19 06:33:50 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:33:50 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+24/09/19 06:33:50 INFO Executor: Running task 0.1 in stage 0.0 (TID 1)
+24/09/19 06:33:50 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 1)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:33:50 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+24/09/19 06:33:50 INFO Executor: Running task 0.2 in stage 0.0 (TID 2)
+24/09/19 06:33:50 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 2)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:33:50 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+24/09/19 06:33:50 INFO Executor: Running task 0.3 in stage 0.0 (TID 3)
+24/09/19 06:33:50 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 3)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:33:50 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+24/09/19 06:33:50 INFO Worker: Asked to kill executor app-20240919063345-0003/0
+24/09/19 06:33:50 INFO ExecutorRunner: Runner thread for executor app-20240919063345-0003/0 interrupted
+24/09/19 06:33:50 INFO ExecutorRunner: Killing process!
+24/09/19 06:33:50 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+24/09/19 06:33:50 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 06:33:51 INFO Worker: Executor app-20240919063345-0003/0 finished with state KILLED exitStatus 143
+24/09/19 06:33:51 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+24/09/19 06:33:51 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20240919063345-0003, execId=0)
+24/09/19 06:33:51 INFO ExternalShuffleBlockResolver: Application app-20240919063345-0003 removed, cleanupLocalDirs = true
+24/09/19 06:33:51 INFO Worker: Cleaning up local directories for application app-20240919063345-0003
+24/09/19 06:39:33 ERROR Worker: RECEIVED SIGNAL TERM
+24/09/19 06:39:33 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 06:39:33 INFO ShutdownHookManager: Deleting directory /tmp/spark-57980072-ccb8-428d-a8ce-65d151c6b9cf
+24/09/19 06:43:28 INFO Worker: Started daemon with process name: 1@01340e08e955
+24/09/19 06:43:28 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:43:28 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:43:28 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:43:28 INFO SecurityManager: Changing view acls to: root,spark
+24/09/19 06:43:28 INFO SecurityManager: Changing modify acls to: root,spark
+24/09/19 06:43:28 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:43:28 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:43:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, spark; groups with view permissions: EMPTY; users with modify permissions: root, spark; groups with modify permissions: EMPTY
+24/09/19 06:43:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:43:29 INFO Utils: Successfully started service 'sparkWorker' on port 42601.
+24/09/19 06:43:29 INFO Worker: Worker decommissioning not enabled.
+24/09/19 06:43:29 INFO Worker: Starting Spark worker 172.23.0.5:42601 with 2 cores, 1024.0 MiB RAM
+24/09/19 06:43:29 INFO Worker: Running Spark version 3.5.2
+24/09/19 06:43:29 INFO Worker: Spark home: /opt/bitnami/spark
+24/09/19 06:43:29 INFO ResourceUtils: ==============================================================
+24/09/19 06:43:29 INFO ResourceUtils: No custom resources configured for spark.worker.
+24/09/19 06:43:29 INFO ResourceUtils: ==============================================================
+24/09/19 06:43:29 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+24/09/19 06:43:29 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+24/09/19 06:43:30 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://01340e08e955:8081
+24/09/19 06:43:30 INFO Worker: Connecting to master spark-master:7077...
+24/09/19 06:43:30 INFO TransportClientFactory: Successfully created connection to spark-master/172.23.0.2:7077 after 46 ms (0 ms spent in bootstraps)
+24/09/19 06:43:30 INFO Worker: Successfully registered with master spark://172.23.0.2:7077
+24/09/19 06:45:01 INFO Worker: Asked to launch executor app-20240919064501-0000/0 for SimpleDataFrame
+24/09/19 06:45:01 INFO SecurityManager: Changing view acls to: root,spark
+24/09/19 06:45:01 INFO SecurityManager: Changing modify acls to: root,spark
+24/09/19 06:45:01 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:45:01 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:45:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, spark; groups with view permissions: EMPTY; users with modify permissions: root, spark; groups with modify permissions: EMPTY
+24/09/19 06:45:01 INFO ExecutorRunner: Launch command: "/opt/bitnami/java/bin/java" "-cp" "/opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=34129" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@dd9f7aa6690e:34129" "--executor-id" "0" "--hostname" "172.23.0.5" "--cores" "2" "--app-id" "app-20240919064501-0000" "--worker-url" "spark://Worker@172.23.0.5:42601" "--resourceProfileId" "0"
+24/09/19 06:45:05 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 116@01340e08e955
+24/09/19 06:45:05 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:45:05 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:45:05 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:45:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:45:06 INFO SecurityManager: Changing view acls to: root,airflow
+24/09/19 06:45:06 INFO SecurityManager: Changing modify acls to: root,airflow
+24/09/19 06:45:06 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:45:06 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:45:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, airflow; groups with view permissions: EMPTY; users with modify permissions: root, airflow; groups with modify permissions: EMPTY
+24/09/19 06:45:07 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:34129 after 105 ms (0 ms spent in bootstraps)
+24/09/19 06:45:07 INFO SecurityManager: Changing view acls to: root,airflow
+24/09/19 06:45:07 INFO SecurityManager: Changing modify acls to: root,airflow
+24/09/19 06:45:07 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:45:07 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:45:07 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, airflow; groups with view permissions: EMPTY; users with modify permissions: root, airflow; groups with modify permissions: EMPTY
+24/09/19 06:45:07 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:34129 after 3 ms (0 ms spent in bootstraps)
+24/09/19 06:45:07 INFO DiskBlockManager: Created local directory at /tmp/spark-870c7bc8-cef8-4d93-907f-51f4219273c3/executor-e9b0b7b2-c8b3-4787-bb37-743ab31846f0/blockmgr-f21bade6-c053-47a8-ab10-40a9a4b6342e
+24/09/19 06:45:07 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/09/19 06:45:08 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@dd9f7aa6690e:34129
+24/09/19 06:45:08 INFO WorkerWatcher: Connecting to worker spark://Worker@172.23.0.5:42601
+24/09/19 06:45:08 INFO TransportClientFactory: Successfully created connection to /172.23.0.5:42601 after 1 ms (0 ms spent in bootstraps)
+24/09/19 06:45:08 INFO WorkerWatcher: Successfully connected to spark://Worker@172.23.0.5:42601
+24/09/19 06:45:08 INFO ResourceUtils: ==============================================================
+24/09/19 06:45:08 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/09/19 06:45:08 INFO ResourceUtils: ==============================================================
+24/09/19 06:45:08 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/09/19 06:45:08 INFO Executor: Starting executor ID 0 on host 172.23.0.5
+24/09/19 06:45:08 INFO Executor: OS info Linux, 5.15.146.1-microsoft-standard-WSL2, amd64
+24/09/19 06:45:08 INFO Executor: Java version 17.0.12
+24/09/19 06:45:08 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39803.
+24/09/19 06:45:08 INFO NettyBlockTransferService: Server created on 172.23.0.5:39803
+24/09/19 06:45:08 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/09/19 06:45:08 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 172.23.0.5, 39803, None)
+24/09/19 06:45:08 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 172.23.0.5, 39803, None)
+24/09/19 06:45:08 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 172.23.0.5, 39803, None)
+24/09/19 06:45:08 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/09/19 06:45:08 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@32184f2c for default.
+24/09/19 06:45:08 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+24/09/19 06:45:08 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/09/19 06:45:08 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+24/09/19 06:45:08 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:46495 after 3 ms (0 ms spent in bootstraps)
+24/09/19 06:45:08 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+24/09/19 06:45:09 INFO TorrentBroadcast: Reading broadcast variable 0 took 171 ms
+24/09/19 06:45:09 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+24/09/19 06:45:10 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+org.apache.spark.SparkException: 
+Error from python worker:
+  Traceback (most recent call last):
+    File "/usr/local/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+      mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+    File "/usr/local/lib/python3.9/runpy.py", line 111, in _get_module_details
+      __import__(pkg_name)
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/__init__.py", line 148, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/__init__.py", line 42, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/types.py", line 28, in <module>
+      
+    File "/usr/local/lib/python3.9/ctypes/__init__.py", line 8, in <module>
+      from _ctypes import Union, Structure, Array
+  ModuleNotFoundError: No module named '_ctypes'
+PYTHONPATH was:
+  /opt/bitnami/spark/python/lib/pyspark.zip:/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip:/opt/bitnami/spark/jars/spark-core_2.12-3.5.2.jar:/usr/local/bin/python3.9
+org.apache.spark.SparkException: EOFException occurred while reading the port number from pyspark.daemon's stdout.
+	at org.apache.spark.errors.SparkCoreErrors$.eofExceptionWhileReadPortNumberError(SparkCoreErrors.scala:53)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:246)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:139)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:107)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:45:10 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+24/09/19 06:45:10 INFO Executor: Running task 0.1 in stage 0.0 (TID 1)
+24/09/19 06:45:10 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 1)
+org.apache.spark.SparkException: 
+Error from python worker:
+  Traceback (most recent call last):
+    File "/usr/local/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+      mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+    File "/usr/local/lib/python3.9/runpy.py", line 111, in _get_module_details
+      __import__(pkg_name)
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/__init__.py", line 148, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/__init__.py", line 42, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/types.py", line 28, in <module>
+      
+    File "/usr/local/lib/python3.9/ctypes/__init__.py", line 8, in <module>
+      from _ctypes import Union, Structure, Array
+  ModuleNotFoundError: No module named '_ctypes'
+PYTHONPATH was:
+  /opt/bitnami/spark/python/lib/pyspark.zip:/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip:/opt/bitnami/spark/jars/spark-core_2.12-3.5.2.jar:/usr/local/bin/python3.9
+org.apache.spark.SparkException: EOFException occurred while reading the port number from pyspark.daemon's stdout.
+	at org.apache.spark.errors.SparkCoreErrors$.eofExceptionWhileReadPortNumberError(SparkCoreErrors.scala:53)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:246)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:139)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:107)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:45:10 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+24/09/19 06:45:10 INFO Executor: Running task 0.2 in stage 0.0 (TID 2)
+24/09/19 06:45:11 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 2)
+org.apache.spark.SparkException: 
+Error from python worker:
+  Traceback (most recent call last):
+    File "/usr/local/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+      mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+    File "/usr/local/lib/python3.9/runpy.py", line 111, in _get_module_details
+      __import__(pkg_name)
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/__init__.py", line 148, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/__init__.py", line 42, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/types.py", line 28, in <module>
+      
+    File "/usr/local/lib/python3.9/ctypes/__init__.py", line 8, in <module>
+      from _ctypes import Union, Structure, Array
+  ModuleNotFoundError: No module named '_ctypes'
+PYTHONPATH was:
+  /opt/bitnami/spark/python/lib/pyspark.zip:/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip:/opt/bitnami/spark/jars/spark-core_2.12-3.5.2.jar:/usr/local/bin/python3.9
+org.apache.spark.SparkException: EOFException occurred while reading the port number from pyspark.daemon's stdout.
+	at org.apache.spark.errors.SparkCoreErrors$.eofExceptionWhileReadPortNumberError(SparkCoreErrors.scala:53)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:246)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:139)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:107)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:45:11 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+24/09/19 06:45:11 INFO Executor: Running task 0.3 in stage 0.0 (TID 3)
+24/09/19 06:45:11 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 3)
+org.apache.spark.SparkException: 
+Error from python worker:
+  Traceback (most recent call last):
+    File "/usr/local/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+      mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+    File "/usr/local/lib/python3.9/runpy.py", line 111, in _get_module_details
+      __import__(pkg_name)
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/__init__.py", line 148, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/__init__.py", line 42, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/types.py", line 28, in <module>
+      
+    File "/usr/local/lib/python3.9/ctypes/__init__.py", line 8, in <module>
+      from _ctypes import Union, Structure, Array
+  ModuleNotFoundError: No module named '_ctypes'
+PYTHONPATH was:
+  /opt/bitnami/spark/python/lib/pyspark.zip:/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip:/opt/bitnami/spark/jars/spark-core_2.12-3.5.2.jar:/usr/local/bin/python3.9
+org.apache.spark.SparkException: EOFException occurred while reading the port number from pyspark.daemon's stdout.
+	at org.apache.spark.errors.SparkCoreErrors$.eofExceptionWhileReadPortNumberError(SparkCoreErrors.scala:53)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:246)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:139)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:107)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:45:12 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+24/09/19 06:45:12 INFO Worker: Asked to kill executor app-20240919064501-0000/0
+24/09/19 06:45:12 INFO ExecutorRunner: Runner thread for executor app-20240919064501-0000/0 interrupted
+24/09/19 06:45:12 INFO ExecutorRunner: Killing process!
+24/09/19 06:45:12 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+24/09/19 06:45:12 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 06:45:12 INFO Worker: Executor app-20240919064501-0000/0 finished with state KILLED exitStatus 143
+24/09/19 06:45:12 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+24/09/19 06:45:12 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20240919064501-0000, execId=0)
+24/09/19 06:45:12 INFO ExternalShuffleBlockResolver: Application app-20240919064501-0000 removed, cleanupLocalDirs = true
+24/09/19 06:45:12 INFO Worker: Cleaning up local directories for application app-20240919064501-0000
+24/09/19 06:57:41 INFO Worker: Asked to launch executor app-20240919065741-0001/0 for SimpleDataFrame
+24/09/19 06:57:41 INFO SecurityManager: Changing view acls to: root,spark
+24/09/19 06:57:41 INFO SecurityManager: Changing modify acls to: root,spark
+24/09/19 06:57:41 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:57:41 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:57:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, spark; groups with view permissions: EMPTY; users with modify permissions: root, spark; groups with modify permissions: EMPTY
+24/09/19 06:57:41 INFO ExecutorRunner: Launch command: "/opt/bitnami/java/bin/java" "-cp" "/opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=33119" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@dd9f7aa6690e:33119" "--executor-id" "0" "--hostname" "172.23.0.5" "--cores" "2" "--app-id" "app-20240919065741-0001" "--worker-url" "spark://Worker@172.23.0.5:42601" "--resourceProfileId" "0"
+24/09/19 06:57:43 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 250@01340e08e955
+24/09/19 06:57:43 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:57:43 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:57:43 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:57:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:57:43 INFO SecurityManager: Changing view acls to: root,airflow
+24/09/19 06:57:43 INFO SecurityManager: Changing modify acls to: root,airflow
+24/09/19 06:57:43 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:57:43 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:57:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, airflow; groups with view permissions: EMPTY; users with modify permissions: root, airflow; groups with modify permissions: EMPTY
+24/09/19 06:57:44 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33119 after 56 ms (0 ms spent in bootstraps)
+24/09/19 06:57:44 INFO SecurityManager: Changing view acls to: root,airflow
+24/09/19 06:57:44 INFO SecurityManager: Changing modify acls to: root,airflow
+24/09/19 06:57:44 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:57:44 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:57:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, airflow; groups with view permissions: EMPTY; users with modify permissions: root, airflow; groups with modify permissions: EMPTY
+24/09/19 06:57:44 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33119 after 3 ms (0 ms spent in bootstraps)
+24/09/19 06:57:44 INFO DiskBlockManager: Created local directory at /tmp/spark-870c7bc8-cef8-4d93-907f-51f4219273c3/executor-bc8300bf-271b-446f-beee-5ef39e469749/blockmgr-0a4c96f9-5c55-4671-9140-b612a549b97b
+24/09/19 06:57:44 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/09/19 06:57:44 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@dd9f7aa6690e:33119
+24/09/19 06:57:44 INFO WorkerWatcher: Connecting to worker spark://Worker@172.23.0.5:42601
+24/09/19 06:57:44 INFO TransportClientFactory: Successfully created connection to /172.23.0.5:42601 after 2 ms (0 ms spent in bootstraps)
+24/09/19 06:57:44 INFO WorkerWatcher: Successfully connected to spark://Worker@172.23.0.5:42601
+24/09/19 06:57:44 INFO ResourceUtils: ==============================================================
+24/09/19 06:57:44 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/09/19 06:57:44 INFO ResourceUtils: ==============================================================
+24/09/19 06:57:44 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/09/19 06:57:44 INFO Executor: Starting executor ID 0 on host 172.23.0.5
+24/09/19 06:57:44 INFO Executor: OS info Linux, 5.15.146.1-microsoft-standard-WSL2, amd64
+24/09/19 06:57:44 INFO Executor: Java version 17.0.12
+24/09/19 06:57:44 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39687.
+24/09/19 06:57:44 INFO NettyBlockTransferService: Server created on 172.23.0.5:39687
+24/09/19 06:57:44 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/09/19 06:57:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 172.23.0.5, 39687, None)
+24/09/19 06:57:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 172.23.0.5, 39687, None)
+24/09/19 06:57:44 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 172.23.0.5, 39687, None)
+24/09/19 06:57:44 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/09/19 06:57:44 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@b16db59 for default.
+24/09/19 06:57:45 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+24/09/19 06:57:45 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/09/19 06:57:45 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+24/09/19 06:57:45 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:36233 after 2 ms (0 ms spent in bootstraps)
+24/09/19 06:57:45 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+24/09/19 06:57:45 INFO TorrentBroadcast: Reading broadcast variable 0 took 114 ms
+24/09/19 06:57:45 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+24/09/19 06:57:46 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+org.apache.spark.SparkException: 
+Error from python worker:
+  Traceback (most recent call last):
+    File "/usr/local/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+      mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+    File "/usr/local/lib/python3.9/runpy.py", line 111, in _get_module_details
+      __import__(pkg_name)
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/__init__.py", line 148, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/__init__.py", line 42, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/types.py", line 28, in <module>
+      
+    File "/usr/local/lib/python3.9/ctypes/__init__.py", line 8, in <module>
+      from _ctypes import Union, Structure, Array
+  ModuleNotFoundError: No module named '_ctypes'
+PYTHONPATH was:
+  /opt/bitnami/spark/python/lib/pyspark.zip:/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip:/opt/bitnami/spark/jars/spark-core_2.12-3.5.2.jar:/usr/local/bin/python3.9
+org.apache.spark.SparkException: EOFException occurred while reading the port number from pyspark.daemon's stdout.
+	at org.apache.spark.errors.SparkCoreErrors$.eofExceptionWhileReadPortNumberError(SparkCoreErrors.scala:53)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:246)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:139)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:107)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:57:46 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+24/09/19 06:57:46 INFO Executor: Running task 0.1 in stage 0.0 (TID 1)
+24/09/19 06:57:46 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 1)
+org.apache.spark.SparkException: 
+Error from python worker:
+  Traceback (most recent call last):
+    File "/usr/local/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+      mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+    File "/usr/local/lib/python3.9/runpy.py", line 111, in _get_module_details
+      __import__(pkg_name)
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/__init__.py", line 148, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/__init__.py", line 42, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/types.py", line 28, in <module>
+      
+    File "/usr/local/lib/python3.9/ctypes/__init__.py", line 8, in <module>
+      from _ctypes import Union, Structure, Array
+  ModuleNotFoundError: No module named '_ctypes'
+PYTHONPATH was:
+  /opt/bitnami/spark/python/lib/pyspark.zip:/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip:/opt/bitnami/spark/jars/spark-core_2.12-3.5.2.jar:/usr/local/bin/python3.9
+org.apache.spark.SparkException: EOFException occurred while reading the port number from pyspark.daemon's stdout.
+	at org.apache.spark.errors.SparkCoreErrors$.eofExceptionWhileReadPortNumberError(SparkCoreErrors.scala:53)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:246)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:139)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:107)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:57:46 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+24/09/19 06:57:46 INFO Executor: Running task 0.2 in stage 0.0 (TID 2)
+24/09/19 06:57:47 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 2)
+org.apache.spark.SparkException: 
+Error from python worker:
+  Traceback (most recent call last):
+    File "/usr/local/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+      mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+    File "/usr/local/lib/python3.9/runpy.py", line 111, in _get_module_details
+      __import__(pkg_name)
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/__init__.py", line 148, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/__init__.py", line 42, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/types.py", line 28, in <module>
+      
+    File "/usr/local/lib/python3.9/ctypes/__init__.py", line 8, in <module>
+      from _ctypes import Union, Structure, Array
+  ModuleNotFoundError: No module named '_ctypes'
+PYTHONPATH was:
+  /opt/bitnami/spark/python/lib/pyspark.zip:/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip:/opt/bitnami/spark/jars/spark-core_2.12-3.5.2.jar:/usr/local/bin/python3.9
+org.apache.spark.SparkException: EOFException occurred while reading the port number from pyspark.daemon's stdout.
+	at org.apache.spark.errors.SparkCoreErrors$.eofExceptionWhileReadPortNumberError(SparkCoreErrors.scala:53)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:246)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:139)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:107)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:57:47 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+24/09/19 06:57:47 INFO Executor: Running task 0.3 in stage 0.0 (TID 3)
+24/09/19 06:57:47 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 3)
+org.apache.spark.SparkException: 
+Error from python worker:
+  Traceback (most recent call last):
+    File "/usr/local/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+      mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+    File "/usr/local/lib/python3.9/runpy.py", line 111, in _get_module_details
+      __import__(pkg_name)
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/__init__.py", line 148, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/__init__.py", line 42, in <module>
+    File "<frozen zipimport>", line 259, in load_module
+    File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/types.py", line 28, in <module>
+      
+    File "/usr/local/lib/python3.9/ctypes/__init__.py", line 8, in <module>
+      from _ctypes import Union, Structure, Array
+  ModuleNotFoundError: No module named '_ctypes'
+PYTHONPATH was:
+  /opt/bitnami/spark/python/lib/pyspark.zip:/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip:/opt/bitnami/spark/jars/spark-core_2.12-3.5.2.jar:/usr/local/bin/python3.9
+org.apache.spark.SparkException: EOFException occurred while reading the port number from pyspark.daemon's stdout.
+	at org.apache.spark.errors.SparkCoreErrors$.eofExceptionWhileReadPortNumberError(SparkCoreErrors.scala:53)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:246)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:139)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:107)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:124)
+	at org.apache.spark.api.python.BasePythonRunner.compute(PythonRunner.scala:174)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 06:57:47 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+24/09/19 06:57:47 INFO Worker: Asked to kill executor app-20240919065741-0001/0
+24/09/19 06:57:47 INFO ExecutorRunner: Runner thread for executor app-20240919065741-0001/0 interrupted
+24/09/19 06:57:47 INFO ExecutorRunner: Killing process!
+24/09/19 06:57:47 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+24/09/19 06:57:47 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 06:57:48 INFO Worker: Executor app-20240919065741-0001/0 finished with state KILLED exitStatus 143
+24/09/19 06:57:48 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+24/09/19 06:57:48 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20240919065741-0001, execId=0)
+24/09/19 06:57:48 INFO ExternalShuffleBlockResolver: Application app-20240919065741-0001 removed, cleanupLocalDirs = true
+24/09/19 06:57:48 INFO Worker: Cleaning up local directories for application app-20240919065741-0001
+24/09/19 06:58:23 ERROR Worker: RECEIVED SIGNAL TERM
+24/09/19 06:58:23 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 06:58:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-870c7bc8-cef8-4d93-907f-51f4219273c3
+24/09/19 06:58:50 INFO Worker: Started daemon with process name: 1@c38cafd06531
+24/09/19 06:58:50 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 06:58:50 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 06:58:50 INFO SignalUtils: Registering signal handler for INT
+24/09/19 06:58:50 INFO SecurityManager: Changing view acls to: spark
+24/09/19 06:58:50 INFO SecurityManager: Changing modify acls to: spark
+24/09/19 06:58:50 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 06:58:50 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 06:58:50 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+24/09/19 06:58:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 06:58:51 INFO Utils: Successfully started service 'sparkWorker' on port 36477.
+24/09/19 06:58:51 INFO Worker: Worker decommissioning not enabled.
+24/09/19 06:58:51 INFO Worker: Starting Spark worker 172.23.0.5:36477 with 2 cores, 1024.0 MiB RAM
+24/09/19 06:58:51 INFO Worker: Running Spark version 3.5.2
+24/09/19 06:58:51 INFO Worker: Spark home: /opt/bitnami/spark
+24/09/19 06:58:51 INFO ResourceUtils: ==============================================================
+24/09/19 06:58:51 INFO ResourceUtils: No custom resources configured for spark.worker.
+24/09/19 06:58:51 INFO ResourceUtils: ==============================================================
+24/09/19 06:58:51 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+24/09/19 06:58:51 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+24/09/19 06:58:51 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://c38cafd06531:8081
+24/09/19 06:58:51 INFO Worker: Connecting to master spark-master:7077...
+24/09/19 06:58:51 INFO TransportClientFactory: Successfully created connection to spark-master/172.23.0.3:7077 after 28 ms (0 ms spent in bootstraps)
+24/09/19 06:58:51 INFO Worker: Successfully registered with master spark://172.23.0.3:7077
+24/09/19 07:00:52 INFO Worker: Asked to launch executor app-20240919070052-0000/0 for SimpleDataFrame
+24/09/19 07:00:52 INFO SecurityManager: Changing view acls to: spark
+24/09/19 07:00:52 INFO SecurityManager: Changing modify acls to: spark
+24/09/19 07:00:52 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 07:00:52 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 07:00:52 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+24/09/19 07:00:52 INFO ExecutorRunner: Launch command: "/opt/bitnami/java/bin/java" "-cp" "/opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=33239" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@dd9f7aa6690e:33239" "--executor-id" "0" "--hostname" "172.23.0.5" "--cores" "2" "--app-id" "app-20240919070052-0000" "--worker-url" "spark://Worker@172.23.0.5:36477" "--resourceProfileId" "0"
+24/09/19 07:00:54 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 131@c38cafd06531
+24/09/19 07:00:54 INFO SignalUtils: Registering signal handler for TERM
+24/09/19 07:00:54 INFO SignalUtils: Registering signal handler for HUP
+24/09/19 07:00:54 INFO SignalUtils: Registering signal handler for INT
+24/09/19 07:00:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/09/19 07:00:54 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 07:00:54 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 07:00:54 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 07:00:54 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 07:00:54 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 07:00:55 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33239 after 54 ms (0 ms spent in bootstraps)
+24/09/19 07:00:55 INFO SecurityManager: Changing view acls to: spark,airflow
+24/09/19 07:00:55 INFO SecurityManager: Changing modify acls to: spark,airflow
+24/09/19 07:00:55 INFO SecurityManager: Changing view acls groups to: 
+24/09/19 07:00:55 INFO SecurityManager: Changing modify acls groups to: 
+24/09/19 07:00:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark, airflow; groups with view permissions: EMPTY; users with modify permissions: spark, airflow; groups with modify permissions: EMPTY
+24/09/19 07:00:55 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:33239 after 3 ms (0 ms spent in bootstraps)
+24/09/19 07:00:55 INFO DiskBlockManager: Created local directory at /tmp/spark-c936fb65-9e7f-4141-93f7-29075931e034/executor-181e3bf4-dd03-4b64-acee-3d6e4ee8a9a8/blockmgr-77e12acd-3f7a-407b-95dd-be4adc93cb12
+24/09/19 07:00:55 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/09/19 07:00:55 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@dd9f7aa6690e:33239
+24/09/19 07:00:55 INFO WorkerWatcher: Connecting to worker spark://Worker@172.23.0.5:36477
+24/09/19 07:00:55 INFO TransportClientFactory: Successfully created connection to /172.23.0.5:36477 after 2 ms (0 ms spent in bootstraps)
+24/09/19 07:00:55 INFO WorkerWatcher: Successfully connected to spark://Worker@172.23.0.5:36477
+24/09/19 07:00:55 INFO ResourceUtils: ==============================================================
+24/09/19 07:00:55 INFO ResourceUtils: No custom resources configured for spark.executor.
+24/09/19 07:00:55 INFO ResourceUtils: ==============================================================
+24/09/19 07:00:55 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+24/09/19 07:00:55 INFO Executor: Starting executor ID 0 on host 172.23.0.5
+24/09/19 07:00:55 INFO Executor: OS info Linux, 5.15.146.1-microsoft-standard-WSL2, amd64
+24/09/19 07:00:55 INFO Executor: Java version 17.0.12
+24/09/19 07:00:55 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 32839.
+24/09/19 07:00:55 INFO NettyBlockTransferService: Server created on 172.23.0.5:32839
+24/09/19 07:00:55 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/09/19 07:00:55 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 172.23.0.5, 32839, None)
+24/09/19 07:00:55 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 172.23.0.5, 32839, None)
+24/09/19 07:00:55 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 172.23.0.5, 32839, None)
+24/09/19 07:00:55 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/09/19 07:00:55 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@4c02f038 for default.
+24/09/19 07:00:56 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+24/09/19 07:00:56 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/09/19 07:00:56 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+24/09/19 07:00:56 INFO TransportClientFactory: Successfully created connection to dd9f7aa6690e/172.23.0.4:44253 after 2 ms (0 ms spent in bootstraps)
+24/09/19 07:00:56 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+24/09/19 07:00:56 INFO TorrentBroadcast: Reading broadcast variable 0 took 97 ms
+24/09/19 07:00:56 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+24/09/19 07:00:58 INFO CodeGenerator: Code generated in 410.699918 ms
+24/09/19 07:00:58 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 07:00:58 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+24/09/19 07:00:58 INFO Executor: Running task 0.1 in stage 0.0 (TID 1)
+24/09/19 07:00:58 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 1)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 07:00:58 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+24/09/19 07:00:58 INFO Executor: Running task 0.2 in stage 0.0 (TID 2)
+24/09/19 07:00:58 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 2)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 07:00:58 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+24/09/19 07:00:58 INFO Executor: Running task 0.3 in stage 0.0 (TID 3)
+24/09/19 07:00:58 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 3)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 12) than that in driver 3.11, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/09/19 07:00:58 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+24/09/19 07:00:58 INFO Worker: Asked to kill executor app-20240919070052-0000/0
+24/09/19 07:00:58 INFO ExecutorRunner: Runner thread for executor app-20240919070052-0000/0 interrupted
+24/09/19 07:00:58 INFO ExecutorRunner: Killing process!
+24/09/19 07:00:58 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+24/09/19 07:00:58 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 07:00:58 INFO MemoryStore: MemoryStore cleared
+24/09/19 07:00:58 INFO BlockManager: BlockManager stopped
+24/09/19 07:00:58 INFO Worker: Executor app-20240919070052-0000/0 finished with state KILLED exitStatus 143
+24/09/19 07:00:58 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+24/09/19 07:00:58 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20240919070052-0000, execId=0)
+24/09/19 07:00:58 INFO ExternalShuffleBlockResolver: Application app-20240919070052-0000 removed, cleanupLocalDirs = true
+24/09/19 07:00:58 INFO Worker: Cleaning up local directories for application app-20240919070052-0000
+24/09/19 07:01:26 ERROR Worker: RECEIVED SIGNAL TERM
+24/09/19 07:01:26 INFO ShutdownHookManager: Shutdown hook called
+24/09/19 07:01:26 INFO ShutdownHookManager: Deleting directory /tmp/spark-c936fb65-9e7f-4141-93f7-29075931e034
