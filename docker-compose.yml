@@ -1,9 +1,13 @@
 version: '3'
 
 x-spark-common: &spark-common
-  image: bitnami/spark:latest
+  #image: bitnami/spark:latest
+  build:
+    context: .
+    dockerfile: Dockerfile_spark
   volumes:
     - ./jobs:/opt/bitnami/spark/jobs
+    - ./data:/opt/data
   networks:
     - code-with-yu
 
@@ -17,6 +21,7 @@ x-airflow-common: &airflow-common
     - ./jobs:/opt/airflow/jobs
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
+    - ./data:/opt/data
   depends_on:
     - postgres
   networks:
@@ -29,6 +34,9 @@ services:
     ports:
       - "9090:8080"
       - "7077:7077"
+    environment:
+      PYSPARK_PYTHON: /usr/local/bin/python3.11
+      PYSPARK_DRIVER_PYTHON: /usr/local/bin/python3.11
 
   spark-worker:
     <<: *spark-common
@@ -42,10 +50,13 @@ services:
       SPARK_WORKER_CORES: 2
       SPARK_WORKER_MEMORY: 1g
       SPARK_MASTER_URL: spark://spark-master:7077
-      PYSPARK_PYTHON: python3.9
+      PYSPARK_PYTHON: /usr/local/bin/python3.11
+      PYSPARK_DRIVER_PYTHON: /usr/local/bin/python3.11
     volumes:
       - ./log4j2.properties:/opt/bitnami/spark/conf/log4j2.properties
       - ./spark-worker-logs:/tmp
+      - ./jobs:/opt/bitnami/spark/jobs
+      - ./data:/opt/data
 
   postgres:
     image: postgres:14.0
@@ -53,6 +64,8 @@ services:
       - POSTGRES_USER=airflow
       - POSTGRES_PASSWORD=airflow
       - POSTGRES_DB=airflow
+    ports:
+      - "5432:5432"
     networks:
       - code-with-yu
 
