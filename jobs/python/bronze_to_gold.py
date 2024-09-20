@@ -1,8 +1,10 @@
 from pyspark.sql import SparkSession
 import sys
+from modulos.extract.extractpostgres import ExtracaoPostgres
+from modulos.load.load_postgresql import LoadPostgresql
 
 spark = SparkSession.builder \
-    .appName("PostgresToGoldSchema") \
+    .appName("Dimensoes Case") \
     .getOrCreate()
 
 jdbc_url = sys.argv[1]
@@ -18,8 +20,14 @@ properties = {
     "driver": "org.postgresql.Driver"
 }
 
-df = spark.read.jdbc(url=jdbc_url, table=tabela_origem, properties=properties)
+extract_postgres_local = ExtracaoPostgres(spark,jdbc_url, properties, tabela_origem)
+load_postgres_local = LoadPostgresql(spark, jdbc_url, properties)
 
-df.write.mode("append").jdbc(url=jdbc_url, table=f"{schema_destino}.{tabela_destino}", properties=properties)
+df = extract_postgres_local.extrair_dados()
+load_postgres_local.carregar_no_postgres(df, f'{schema_destino}.{tabela_destino}', "overwrite")
+
+# df = spark.read.jdbc(url=jdbc_url, table=tabela_origem, properties=properties)
+
+# df.write.mode("append").jdbc(url=jdbc_url, table=f"{schema_destino}.{tabela_destino}", properties=properties)
 
 spark.stop()

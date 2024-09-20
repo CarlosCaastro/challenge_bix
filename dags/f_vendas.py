@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 spark_conn = os.environ.get("spark_conn", "spark_conn")
 spark_master = "spark://spark-master:7077"
 
-spark_app_name = "Fato Vendas"
+spark_app_name = "F Vendas"
 now = datetime.now()
 
 default_args = {

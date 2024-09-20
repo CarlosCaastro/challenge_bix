@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, row_number, year, month, dayofmonth, dayofweek, quarter, weekofyear, expr, monotonically_increasing_id
 from datetime import datetime, timedelta
 from pyspark.sql.window import Window
-from pyspark.sql.functions import row_number
+from modulos.load.load_postgresql import LoadPostgresql
 
 container_postgres_url = "jdbc:postgresql://postgres:5432/bix_challenger"
 container_postgres_properties = {
@@ -12,11 +12,12 @@ container_postgres_properties = {
 }
 
 spark = SparkSession.builder \
-    .appName("DimensaoTempoComIDPortugues") \
-    .config("spark.sql.session.timeZone", "America/Sao_Paulo") \
-    .config("spark.sql.session.local", "pt_BR") \
+    .appName("Dimensoes Case") \
     .getOrCreate()
 
+load_postgres_local = LoadPostgresql(spark, container_postgres_url, container_postgres_properties)
+schema = 'gold'
+table_name = 'dim_tempo'
 
 def generate_date_range(start_date, end_date):
     date_list = []
@@ -34,6 +35,7 @@ date_data = generate_date_range(start_date, end_date)
 
 df = spark.createDataFrame(date_data, ['data'])
 windowSpec = Window.orderBy("data")
+
 df_dim_tempo = df \
     .withColumn("id", row_number().over(windowSpec)) \
     .withColumn("ano", year(col("data"))) \
@@ -44,4 +46,4 @@ df_dim_tempo = df \
     .withColumn("semana_do_ano", weekofyear(col("data"))) \
     .withColumn("final_de_semana", expr("CASE WHEN dayofweek(data) IN (1, 7) THEN True ELSE False END"))
 
-df_dim_tempo.write.jdbc(url=container_postgres_url, table="gold.dim_tempo", mode="append", properties=container_postgres_properties)
+load_postgres_local.carregar_no_postgres(df_dim_tempo, f'{schema}.{table_name}', "overwrite")

@@ -7,7 +7,7 @@ from datetime import timedelta
 spark_conn = os.environ.get("spark_conn", "spark_conn")
 spark_master = "spark://spark-master:7077"
 
-spark_app_name = "Escrita no banco Postgres"
+spark_app_name = "Dimensoes Gold"
 
 default_args = {
     'owner': 'airflow',
@@ -18,7 +18,7 @@ default_args = {
 }
 
 dag = DAG(
-    'Dimensoes',
+    'Dimensions',
     default_args=default_args,
     description='Submit Spark job to read from Postgres and write to gold schema',
     schedule_interval=timedelta(days=1),
@@ -69,4 +69,15 @@ spark_employees = SparkSubmitOperator(
     dag=dag,
 )
 
-spark_categoria >> spark_employees
+spark_tempo = SparkSubmitOperator(
+    task_id="d_tempo",
+    application="jobs/python/d_tempo.py",
+    name=spark_app_name,
+    conn_id=spark_conn,
+    verbose=1,
+    conf={"spark.master": spark_master},
+    packages="org.postgresql:postgresql:42.2.20",
+    dag=dag
+)
+
+spark_categoria >> spark_employees >> spark_tempo

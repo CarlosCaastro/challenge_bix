@@ -2,6 +2,14 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 import requests
 
+from modulos.extract.extractpi import ExtracaoAPI
+from modulos.load.load_postgresql import LoadPostgresql
+
+
+spark = SparkSession.builder \
+    .appName("Extract from API") \
+    .getOrCreate()
+
 container_postgres_url = "jdbc:postgresql://postgres:5432/bix_challenger"
 container_postgres_properties = {
     "user": "airflow",
@@ -9,36 +17,14 @@ container_postgres_properties = {
     "driver": "org.postgresql.Driver"
 }
 
-def fetch_employee_name(employee_id):
-    url = f"https://us-central1-bix-tecnologia-prd.cloudfunctions.net/api_challenge_junior?id={employee_id}"
-    try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            data = response.text
-            return employee_id, data
-        else:
-            return employee_id, f"Error {response.status_code}"
-    except Exception as e:
-        return employee_id, str(e)
+schema = 'bronze'
+table_name = 'employees'
 
-spark = SparkSession.builder \
-    .appName("Escrita no banco Postgres") \
-    .getOrCreate()
+api_url = "https://us-central1-bix-tecnologia-prd.cloudfunctions.net/api_challenge_junior"
+extract_api = ExtracaoAPI(spark, api_url)
+load_postgres_local = LoadPostgresql(spark, container_postgres_url, container_postgres_properties)
+df_api = extract_api.extrair_dados(range(1, 10))
 
-data = []
-for employee_id in range(1, 10):
-    result = fetch_employee_name(employee_id)
-    data.append(result)
-
-schema = StructType([
-    StructField("employee_id", IntegerType(), True),
-    StructField("employee_name", StringType(), True)
-])
-
-employee_df = spark.createDataFrame(data, schema)
-
-
-employee_df.write.jdbc(url=container_postgres_url, table="bronze.employees", mode="overwrite", properties=container_postgres_properties)
-
+load_postgres_local.carregar_no_postgres(df_api, f'{schema}.{table_name}', "overwrite")
 
 spark.stop()
