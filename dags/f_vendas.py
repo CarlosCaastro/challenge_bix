@@ -19,7 +19,10 @@ dag = DAG(
     dag_id="f_vendas",
     description="This DAG triggers a Spark job to process data from GCS (Parquet file) and write to PostgreSQL",
     default_args=default_args,
-    schedule_interval=timedelta(days=1)
+    schedule_interval=None,
+    catchup=False,
+    is_paused_upon_creation=False,
+    tags = ["FATO"]
 )
 
 start = DummyOperator(task_id="start", dag=dag)

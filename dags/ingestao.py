@@ -20,7 +20,9 @@ dag = DAG(
     dag_id="Ingestion",
     description="This DAG triggers a Spark job to process data from diferents locations and write to PostgreSQL",
     default_args=default_args,
-    schedule_interval=timedelta(days=1),
+    schedule_interval=None,
+    catchup=False,
+    is_paused_upon_creation=False,
     tags = ["INGESTION"]
 )
 

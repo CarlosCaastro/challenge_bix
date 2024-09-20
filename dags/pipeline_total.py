@@ -14,8 +14,10 @@ with DAG(
     'master_dag',
     default_args=default_args,
     description='DAG para disparar outras DAGs com base em uma lista',
-    schedule_interval=timedelta(days=1),
+    schedule_interval="0 7 * * *",
     catchup=False,
+    is_paused_upon_creation=False,
+    tags = ["PIPE"]
 ) as dag:
 
     trigger_tasks = []

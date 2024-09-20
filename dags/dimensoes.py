@@ -18,7 +18,10 @@ dag = DAG(
     'Dimensions',
     default_args=default_args,
     description='Submit Spark job to read from Postgres and write to gold schema',
-    schedule_interval=timedelta(days=1),
+    schedule_interval=None,
+    catchup=False,
+    is_paused_upon_creation=False,
+    tags = ["DIMENSÕES"]
 )
 
 
