@@ -11,13 +11,8 @@ spark_app_name = "F Vendas"
 now = datetime.now()
 
 default_args = {
-    "owner": "airflow",
-    "depends_on_past": False,
+    "owner": "Carlos",
     "start_date": datetime(now.year, now.month, now.day),
-    "email": ["airflow@airflow.com"],
-    "email_on_failure": False,
-    "email_on_retry": False,
-    "retry_delay": timedelta(minutes=1)
 }
 
 dag = DAG(

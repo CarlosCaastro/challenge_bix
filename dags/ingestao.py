@@ -12,8 +12,7 @@ spark_app_name = "Ingestion"
 now = datetime.now()
 
 default_args = {
-    "owner": "BIX",
-    "depends_on_past": False,
+    "owner": "Carlos",
     "start_date": datetime(now.year, now.month, now.day),
 }
 

@@ -1,20 +1,17 @@
 import os
 from airflow import DAG
 from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
-from airflow.utils.dates import days_ago
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 spark_conn = os.environ.get("spark_conn", "spark_conn")
 spark_master = "spark://spark-master:7077"
 
 spark_app_name = "Dimensoes Gold"
+now = datetime.now()
 
 default_args = {
-    'owner': 'airflow',
-    'depends_on_past': False,
-    'start_date': days_ago(1),
-    'email_on_failure': False,
-    'email_on_retry': False,
+    'owner': 'Carlos',
+    'start_date': datetime(now.year, now.month, now.day),
 }
 
 dag = DAG(
