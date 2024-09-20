@@ -1,7 +1,6 @@
 version: '3'
 
 x-spark-common: &spark-common
-  #image: bitnami/spark:latest
   build:
     context: .
     dockerfile: Dockerfile_spark
@@ -69,15 +68,16 @@ services:
 
   webserver:
     <<: *airflow-common
-    command: webserver
+    command: bash -c "python /opt/airflow/dags/scripts/connections.py && airflow webserver"
     ports:
       - "8080:8080"
     depends_on:
+      - postgres
       - scheduler
 
   scheduler:
     <<: *airflow-common
-    command: bash -c "airflow db migrate && airflow users create --username admin --firstname Carlos --lastname Castro --role Admin --email airscholar@gmail.com --password admin && airflow scheduler"
+    command: bash -c "airflow db migrate && airflow users create --username airflow --firstname Carlos --lastname Castro --role Admin --email carlos.candradr@gmail.com --password airflow && airflow scheduler"
 
 networks:
   code-carlos:
