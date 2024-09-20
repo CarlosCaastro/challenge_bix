@@ -11,7 +11,7 @@ container_postgres_properties = {
 }
 
 spark = SparkSession.builder \
-    .appName("SubstituirDataVendaPorIDTempo") \
+    .appName("Fato Case") \
     .getOrCreate()
 
 extract_postgres_vendas = ExtracaoPostgres(spark,container_postgres_url, container_postgres_properties, "bronze.venda")
