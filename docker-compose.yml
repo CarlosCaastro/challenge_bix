@@ -9,7 +9,7 @@ x-spark-common: &spark-common
     - ./jobs:/opt/bitnami/spark/jobs
     - ./data:/opt/data
   networks:
-    - code-with-yu
+    - code-carlos
 
 x-airflow-common: &airflow-common
   build:
@@ -25,7 +25,7 @@ x-airflow-common: &airflow-common
   depends_on:
     - postgres
   networks:
-    - code-with-yu
+    - code-carlos
 
 services:
   spark-master:
@@ -65,7 +65,7 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - code-with-yu
+      - code-carlos
 
   webserver:
     <<: *airflow-common
@@ -80,4 +80,4 @@ services:
     command: bash -c "airflow db migrate && airflow users create --username admin --firstname Carlos --lastname Castro --role Admin --email airscholar@gmail.com --password admin && airflow scheduler"
 
 networks:
-  code-with-yu:
+  code-carlos:
